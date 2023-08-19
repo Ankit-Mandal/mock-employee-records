@@ -1,0 +1,30 @@
+/* Hide the default sort icons */
+.ant-table-column-sorters .ant-table-column-sorter-up,
+.ant-table-column-sorters .ant-table-column-sorter-down {
+  display: none;
+}
+
+/* Add custom sort icons */
+.ant-table-column-sorters::before {
+  content: "";
+}
+
+/* Change the sort icon based on the current sort order */
+.ant-table-column-sorters.ant-table-column-sort
+  .ant-table-column-sorter-up.active::before {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 8l-6 6h12z"/></svg>');
+}
+
+.ant-table-column-sorters.ant-table-column-sort
+  .ant-table-column-sorter-down.active::before {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 16l6-6H6z"/></svg>');
+}
+
+/* Change the sort icon based on the current sort order */
+/* .ant-table-column-sorters.ant-table-column-sort .ant-table-column-sorter-up.active::before {
+  content: url('data:image/svg+xml;utf8,' + encodeURIComponent(document.querySelector('.mui-icon-up').outerHTML));
+}
+
+.ant-table-column-sorters.ant-table-column-sort .ant-table-column-sorter-down.active::before {
+  content: url('data:image/svg+xml;utf8,' + encodeURIComponent(document.querySelector('.mui-icon-down').outerHTML));
+} */
