@@ -12,7 +12,7 @@ export const employeeNames = [
 ];
 
 export const companyNames = [
-  "Roscoeview",
+  "Romaguera-Crona",
   "Deckow-Crist",
   "Romaguera-Jacobson",
   "Robel-Corkery",
