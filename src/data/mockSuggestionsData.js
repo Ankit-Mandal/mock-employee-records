@@ -21,5 +21,5 @@ export const companyNames = [
   "Johns Group",
   "Abernathy Group",
   "Yost and Sons",
-  "Yost and Sons",
+  "Hoeger LLC",
 ];
